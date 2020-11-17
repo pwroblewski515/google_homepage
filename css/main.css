@@ -52,13 +52,46 @@ nav {
 }
 
 .logo img {
-  padding-top: 109px;
+  margin-top: 109px;
   height: 92px;
 }
 
 .search {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 70px 70px;
+  margin: auto;
+  width: 584px;
+}
+
+.search-bar {
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 1;
+  height: 44px;
+  border-radius: 25px;
+  background-image: url(images/search.svg) no-repeat;
+}
+
+.search-button{
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  height: 36px;
+}
+
+.search svg {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  height: 20px;
+  width: 20px;
+  z-index: 1;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.lucky-button {
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+  height: 36px;
 }
 
 
