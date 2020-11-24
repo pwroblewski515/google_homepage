@@ -96,3 +96,34 @@ nav {
 
 
 /* Footer */
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-size: 14px;
+  line-height: 40px;
+  color: #70757a;
+  background-color: #f2f2f2;
+  border-top: 1px solid #dadce0;
+}
+
+.footer-left {
+  display: flex;
+  width: 500px;
+  float: left;
+  justify-content: flex-start;
+  margin-left: 30px;
+}
+
+.footer-right {
+  display: flex;
+  width: 500px;
+  float: right;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+
+footer a {
+  padding-left: 27px;
+}
